@@ -13,8 +13,8 @@ include device/transsion/mt6789-common/BoardConfigCommon.mk
 TARGET_OTA_ASSERT_DEVICE := TECNO-CK7n
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_TECNO-CK7n
-TARGET_RECOVERY_DEVICE_MODULES := libinit_TECNO-CK7n
+TARGET_INIT_VENDOR_LIB := libinit_CK7n
+TARGET_RECOVERY_DEVICE_MODULES := libinit_CK7n
 
 # TWRP Configs
 TW_DEVICE_VERSION := CK7n_by_Kelvin
