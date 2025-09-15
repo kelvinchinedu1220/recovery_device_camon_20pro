@@ -4,11 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-COMMON_PATH := device/transsion/mt6789-common
-
-TARGET_RECOVERY_DEVICE_DIRS := \
-    $(COMMON_PATH) \
-    $(DEVICE_PATH)
+DEVICE_PATH := device/tecno/CK7n
 
 # Architecture
 TARGET_ARCH := arm64
