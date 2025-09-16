@@ -2,7 +2,8 @@
 # The filesystem that contains the filesystem checker binary (typically /system) cannot
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
-# mount point		fs		device						device2			 device3			flags
+# mount point		          fs		    device		  device2			 device3		 	flags
+
 # User writeable partitions
 # Boot
 /boot                     emmc      /dev/block/by-name/boot                                flags=display=Boot;backup=1;flashimg=1;slotselect
@@ -60,11 +61,6 @@
 /boot_para                emmc      /dev/block/by-name/boot_para
 /odmdtbo                  emmc      /dev/block/by-name/odmdtbo
 /otp                      emmc      /dev/block/by-name/otp
-
-# Firmware
-/dtbo			emmc		/dev/block/by-name/dtbo											flags=display=dtbo;slotselect;backup
-/metadata		ext4		/dev/block/by-name/metadata										flags=display=metadata;backup
-/misc			emmc		/dev/block/by-name/misc											flags=display=misc;backup
 
 # Flashable logical partitions
 /system_image		emmc		/dev/block/bootdevice/by-name/system									flags=backup;flashimg
